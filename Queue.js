@@ -29,7 +29,7 @@ class Que {
     }
 
     peek(){
-        return this.data[this.size() -1]
+        return this.data[0]
 
     }
 
