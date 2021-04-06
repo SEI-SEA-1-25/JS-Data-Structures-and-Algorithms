@@ -20,14 +20,14 @@ class Queue{
 
     enqueue(element)
     {
-        this.items.push(element)
+        this.data.push(element)
     }
     dequeue()
     {
         if(this.isEmpty()){
             return
         } else {
-            return this.items.shift()
+            return this.data.shift()
         }
     }
 
@@ -38,7 +38,9 @@ class Queue{
 
     print()
     {
-        return console.log(this.container)
+        this.data.forEach(item => {
+            console.log(item)
+        })
     }
 }
 
