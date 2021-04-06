@@ -2,7 +2,6 @@ ex1 = [5, 8, 1, 10, 7];
 ex2 = [2, 6, 8, 13, 18, 19];
 ex3 = [0, -23, 10];
 ex4 = [90, -22, -20, 1];
-// console.log(ex3);
 
 const bubbleSort = (arr) => {
   //get length of arr
