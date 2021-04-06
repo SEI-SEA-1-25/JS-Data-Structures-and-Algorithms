@@ -7,6 +7,8 @@ let bubbleSort = (array) => {
     let len = array.length
     for (let i = 0; i < len; i ++) {
         for (let j = 0; j < len; j ++) {
+            // saved a little bit of time
+        // for (let j = 0; j < len - i - 1; j ++) {
             if(array[j] > array[j+1]) {
                 let k = array[j];
                 array[j] = array[j + 1];
@@ -18,3 +20,28 @@ let bubbleSort = (array) => {
     console.log(array)
 }
 bubbleSort(numbers)
+
+// while loop
+
+// let whileBubble = (array) => {
+//     let len = array.length
+//     let isSorted = false
+//     let didSwap = false
+//     while(!isSorted) {
+//         for (let i = 0; i < len; i ++) {
+//             if(array[i] > array[i+1]) {
+//                 let k = array[i];
+//                 array[i] = array[i + 1];
+//                 array[i+1] = k
+//                 didSwap = true
+//             }
+//             if (i === array.length - 1) {
+//                 if(didSwap){
+//                     didSwap = false
+//                 } else {
+//                     isSorted = true
+//                 }
+//             }
+//         }
+//     }
+// }

@@ -8,16 +8,20 @@ class Queue {
     }
     isEmpty() {
         return this.data.length == 0
+        // return this.size() == 0
     }
     enqueue(item) {
         this.data.push(item)
         console.log(this.data)
+        // return this.size()
     }
     dequeue() {
         if(this.data.length == 0)  {
             return
         } else {
-            return this.data.pop(0)
+            // return this.data.pop(0)
+            this.data.shift()
+            return this.size()
         }
     }
     peek() {
@@ -28,6 +32,9 @@ class Queue {
         for(let i = 0; i < this.data.length; i++) {
             string += this.data[i] + " "
         }
+        // this.data.forEach(element => {
+        //     console.log(element)
+        // })
         return string
     }
 }

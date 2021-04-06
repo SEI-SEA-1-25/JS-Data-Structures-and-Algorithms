@@ -8,10 +8,12 @@ class Stack {
     }
     isEmpty() {
         return this.data.length == 0
+        // return this.data.size() == 0
     }
     push(item) {
         this.data.push(item)
         return this.data.length
+        // return this.size()
     }
     pop() {
         if(this.data.length == 0)  {
@@ -19,17 +21,22 @@ class Stack {
         } else {
             this.data.pop();
             // console.log(this.data.length)
+            // return this.size()
             return this.data
         }
     }
     peek() {
         return this.data[this.data.length - 1]
+        // return this.data[this.size() - 1]
     }
     print() {
         let string = '';
         for(let i = 0; i < this.data.length; i++) {
             string += this.data[i] + " "
         }
+        //this.data.forEach(element => {
+        //     console.log(element)
+        // })
         return string
         // console.log(string)
     }
