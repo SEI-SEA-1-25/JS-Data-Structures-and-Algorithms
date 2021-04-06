@@ -55,3 +55,11 @@ newQueue.enqueue(22);
 
 newQueue.printQueue();
 console.log(newQueue.size());
+
+//REMOVE ITEMS FROM Q
+//shift() -- removes index[0] from array
+//unshift() -- adds to front of array
+//splice(0, 1)-- splice index[0] only to take one index
+//example: array.splice(5, 4) *digit on indicated index,
+//                            *digit 2 is the number of items it will remove
+//                            *it would remove index[5] thru index[8]
