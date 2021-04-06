@@ -12,14 +12,14 @@ function bubbleSort(array) {
     console.log(`This is how the array went in ${array}`)
     for(let i=0; i < array.length; i++){
         console.log(`I LOOP @ ${array[i]} at index ${i}`)
-        x = array[i]
-        
-        for(let j=0; j < array.length; j++){
-            y = array[i + 1]
+    
+        for(let j=0; j < array.length - i -1 ; j++){
+            x = array[j]
+            y = array[j + 1]
             console.log(`this is x ${x} and this is y ${y}`)
             if(x > y){
-                array.splice(i, 1, y)
-                array.splice(i + 1 , 1, x)     
+                array.splice(j, 1, y)
+                array.splice(j + 1 , 1, x)     
             }
             console.log(`this is the final array ${array}`)
         }
@@ -28,4 +28,4 @@ function bubbleSort(array) {
 
 
 
-bubbleSort(testArr)
+bubbleSort(numbers)
