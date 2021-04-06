@@ -6,38 +6,4 @@ const mrBubble = (unsortedArray) => {
   // flag to stop sorting 
   let isSorted = false
   // flag if a swap was made for the end of the loop
-  let didSwap = false
-
-  // don't stop till its sorted
-  while(!isSorted){
-    // loop over the array
-    for(let i = 0; i < unsortedArray.length; i++) {
-      // chack if adjacent elements are in correct order
-      if(unsortedArray[i] > unsortedArray[i + 1]){
-        // variable for swapping elements
-        let swap = unsortedArray[i]
-        // swap the elements
-        unsortedArray[i] = unsortedArray[i + 1]
-        unsortedArray[i + 1] = swap
-        // set the swap flag for the end of the loop
-        didSwap = true
-      }
-
-      // at the end of the loop adjust flags accordingly
-      if(i === unsortedArray.length - 1) {
-        // if a swap was made, reset didSwap and let it keep looping
-        if(didSwap) {
-          didSwap = false
-        } else {
-          // if no swap was made, the array is sorted! 🥳 stop the while loop
-          isSorted = true
-        }
-      }
-    }
-  }
-
-  return unsortedArray
-}
-
-mrBubble(numbers)
-console.log(numbers)
+  
