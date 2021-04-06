@@ -3,7 +3,6 @@ class Queue {
   constructor() {
     this.items = [];
   }
-  // Functions to be implemented
   //size
   size() {
     return this.items.length;
@@ -19,14 +18,14 @@ class Queue {
     // return top most element in the queue
     // and removes it from the queue
     // Underflow if queue is empty
-    this.items.pop();
+    this.items.shift();
     return this.size();
   }
   // peek()
   peek() {
     // return the top most element from the queue
     // but doesn't delete it.
-    return this.items[this.items.length - 1];
+    return this.items[0];
   }
   // isEmpty()
   isEmpty() {

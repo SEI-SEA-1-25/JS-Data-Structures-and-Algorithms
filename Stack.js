@@ -25,7 +25,7 @@ class Stack {
   peek() {
     // return the top most element from the stack
     // but doesn't delete it.
-    return this.data[this.size - 1];
+    return console.log(`Top of stack: ${this.data[this.data.length - 1]}`);
   }
   // isEmpty()
   isEmpty() {
@@ -50,7 +50,7 @@ newStack.push(101);
 newStack.push(11);
 newStack.push(22);
 newStack.push("🐚");
-newStack.peek([1]);
+newStack.peek();
 
 newStack.printStack();
 console.log(`${newStack.size()} pancakes in stack. 🥞`);
