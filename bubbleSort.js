@@ -3,3 +3,14 @@ const numbers = [ 413, 445, 403, 224, 157, 312, 785, 862, 602, 354, 90, 442, 458
 
 // Your bubble sort goes here
 
+numbers.sort((a,b) => {
+    if (a > b){
+        return a - b;
+    } else {
+        return b - a
+    }
+    }
+ )
+
+ console.log(numbers)
+
