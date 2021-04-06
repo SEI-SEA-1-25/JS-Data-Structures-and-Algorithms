@@ -51,6 +51,3 @@ myStack.push('new stack')
 myStack.push('the other one')
 myStack.pop()
 myStack.print()
-
-
-
