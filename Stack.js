@@ -33,6 +33,8 @@ class Stack {
 
     // print out the stack
     print() {
-        
+        this.data.forEach(element => {
+            console.log(element)
+        })
     }
 }
