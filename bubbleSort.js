@@ -3,3 +3,17 @@ const numbers = [ 413, 445, 403, 224, 157, 312, 785, 862, 602, 354, 90, 442, 458
 
 // Your bubble sort goes here
 
+function bubbleSort(arr){
+    // loop over array 
+    for(let i = 0; i < arr.length; i++){
+        // inner loop does the swap
+        for(let j = 0; j < arr.length - i - 1; j++) {
+            if(arr[j] > arr[j + 1]) {
+                const swap = arr[j]
+                arr[j] = arr[j + 1]
+                arr[j + 1] = swap
+            }
+        }
+    }
+}
+
