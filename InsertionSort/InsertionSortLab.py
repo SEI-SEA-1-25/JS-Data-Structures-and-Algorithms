@@ -32,6 +32,6 @@ arr_1 = [5,2,1,10,7];
  
 arr_2 = [14,46,43,27,57,41,45,21,70]
 
-
+insertion_sort(arr_1)
 insertion_sort(arr_2)
-print(arr_2)
+print(f"🎉 Insertion Sorted 🥳\nArray 1:{arr_1}\nArray 2:{arr_2}")
