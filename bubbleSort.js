@@ -11,17 +11,18 @@ function bubbleSort(array) {
     let y
     console.log(`This is how the array went in ${array}`)
     for(let i=0; i < array.length; i++){
-        // console.log(`I LOOP @ ${array[i]} at index ${i}`)
+        console.log(`I LOOP @ ${array[i]} at index ${i}`)
         x = array[i]
-        y = array[i + 1]
-
-        // console.log(`this is x ${x} and this is y ${y}`)
+        
+        for(let j=0; j < array.length; j++){
+            y = array[i + 1]
+            console.log(`this is x ${x} and this is y ${y}`)
             if(x > y){
                 array.splice(i, 1, y)
                 array.splice(i + 1 , 1, x)     
             }
-         console.log(`this is the final array ${array}`)
-        // }
+            console.log(`this is the final array ${array}`)
+        }
     }
 }
 
