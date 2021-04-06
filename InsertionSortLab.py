@@ -8,25 +8,30 @@ def insertion_sort(arr):
         #they key is the value of the current selected index
         key = arr[i]
         #set index to the keys left to var
-        idx_left = i-1
-        #while the leftkey is greater than or equal to 0
+        k_left = i-1
+        #while the leftkey is greater than or equal to 0 
+        # (stops running the key when/if it makes it to index[0])
         #and the key less than the value of the arr at leftkey
-        #                           print(" 🐚", arr[idx_left])
-        while idx_left >= 0 and key < arr[idx_left]:
-             #then: the number on the left moves one right
-             # (inturn moving the key right)
-            arr[idx_left+1] = arr[idx_left]
-            idx_left -= 1
-        arr[idx_left+1] = key
+        #                           print("LEFT INDEX:", arr[k_left])
+        #
+        while k_left >= 0 and key < arr[k_left]:
+             #swap happens here
+            arr[k_left+1] = arr[k_left]
+            #move left key over 1
+            k_left -= 1
+        #sets the key relative to the moved left key    
+        arr[k_left+1] = key
 
 
-arr_1 = [5, 2, 1, 10, 7];
+arr_1 = [5,2,1,10,7];
 # [5, 2,] 1, 10, 7
 # 2, [5, 1,] 10, 7
 # 1, 2, [5, 10,] 7
 # 1, 2, 5, [10, 7]
 # 1, 2, 5, 7, 10
+ 
+arr_2 = [14,46,43,27,57,41,45,21,70]
 
-insertion_sort(arr_1)
-for i in range(len(arr_1)):
-    print(arr_1[i])
+
+insertion_sort(arr_2)
+print(arr_2)
