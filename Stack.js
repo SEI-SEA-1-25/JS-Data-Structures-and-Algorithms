@@ -11,30 +11,24 @@ class Stack{
 
     isEmpty()
     {
-        if (this.data.length == 0) {
-            return true
-        }else {
-            return false
-        }
+        return this.size() == 0
     }
 
     push(element)
     {
         this.data.push(element)
+        return this.size()
     }
 
     pop()
     {
-        if (this.data.length == 0){
-            return
-        } else {
-            this.data.pop()
-        }
+        this.data.pop()
+        return this.size()
     }
 
     peek()
     {
-        return this.data[this.data.length - 1]
+        return this.data[this.size() - 1]
     }
 
     print()

@@ -11,17 +11,15 @@ class Queue{
 
     isEmpty()
     {
-        if (this.data.length == 0) {
-            return true
-        }else {
-            return false
-        }
+        return this.size() == 0
     }
 
     enqueue(element)
     {
         this.data.push(element)
+        return this.size()
     }
+
     dequeue()
     {
         if(this.isEmpty()){
